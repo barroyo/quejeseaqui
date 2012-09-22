@@ -3,7 +3,7 @@ class Entity < ActiveRecord::Base
 	attr_accessible :description, :name, :category_entity_id
 
 	#validate PRESENCE
-	validates :description, :name, :category_entity_id
+	validates :description, :name, :category_entity_id,
 		:presence => true
 
 	#validate LENGTH

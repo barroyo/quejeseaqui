@@ -4,7 +4,7 @@ class Complaint < ActiveRecord::Base
   	attr_accessible :body, :permalink, :proposal, :title, :user_id, :entity_id
 
 	#validate PRESENCE
-	validates :body, :title, :user_id, :entity_id
+	validates :body, :title, :user_id, :entity_id,
 		:presence => true
 
 	#validate LENGTH body and proposal

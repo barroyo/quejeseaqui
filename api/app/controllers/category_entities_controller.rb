@@ -26,8 +26,9 @@ class CategoryEntitiesController < ApplicationController
   # POST /category_entities
   # POST /category_entities.json
   def create
-    @category_entity = CategoryEntity.new(params[:category_entity])
-
+    @category_entity = CategoryEntity.new()
+    @category_entity.name = params[:name]
+    @category_entity.description = params[:description]
     if @category_entity.save
       render json: @category_entity, status: :created, location: @category_entity
     else
