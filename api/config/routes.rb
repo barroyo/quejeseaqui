@@ -1,4 +1,12 @@
 Quejeseaqui::Application.routes.draw do
+  resources :complaints, except: :edit
+
+  resources :users, except: :edit
+
+  resources :entities, except: :edit
+
+  resources :category_entities, except: :edit
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

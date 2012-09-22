@@ -1,0 +1,147 @@
+  [1m[36m (213.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (156.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922045427)
+  [1m[35m (83.6ms)[0m  CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922045427')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateControllers (20120922050742)
+  [1m[35m (109.7ms)[0m  CREATE TABLE `controllers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `CategoryEntity` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (43.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922050742')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateControllers (20120922050742)
+Migrating to CreateCategoryEntities (20120922050917)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'category_entities' already exists: CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateControllers (20120922050742)
+  [1m[36m (41.2ms)[0m  [1mDROP TABLE `controllers`[0m
+  [1m[35m (32.9ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120922050742'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922050917)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'category_entities' already exists: CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (105.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (156.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922051729)
+  [1m[35m (83.5ms)[0m  CREATE TABLE `category_entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922051729')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922051729)
+Migrating to CreateEntities (20120922052502)
+  [1m[35m (100.5ms)[0m  CREATE TABLE `entities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `name` varchar(255), `category_entity_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.4ms)[0m  [1mCREATE INDEX `index_entities_on_category_entity_id` ON `entities` (`category_entity_id`)[0m
+  [1m[35m (32.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120922052502')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/assets/rails.png" for 192.168.2.124 at 2012-09-21 23:33:08 -0600
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/category_entities/1.json" for 127.0.0.1 at 2012-09-21 23:37:20 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.4ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 71ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:37:57 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.104 at 2012-09-21 23:39:39 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922051729)
+Migrating to CreateEntities (20120922052502)
+Migrating to CreateUsers (20120922054000)
+  [1m[35m (83.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255), `email_address` varchar(255), `access_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922054000')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:46:33 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:46:55 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:47:37 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:48:32 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-21 23:50:09 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateCategoryEntities (20120922051729)
+Migrating to CreateEntities (20120922052502)
+Migrating to CreateUsers (20120922054000)
+Migrating to CreateComplaints (20120922055343)
+  [1m[35m (88.9ms)[0m  CREATE TABLE `complaints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `permalink` varchar(255), `user_id` int(11), `body` varchar(255), `entity_id` int(11), `proposal` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.3ms)[0m  [1mCREATE INDEX `index_complaints_on_user_id` ON `complaints` (`user_id`)[0m
+  [1m[35m (144.6ms)[0m  CREATE INDEX `index_complaints_on_entity_id` ON `complaints` (`entity_id`)
+  [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922055343')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 

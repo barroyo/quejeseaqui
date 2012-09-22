@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  permalink: MyString
+  user: 
+  body: MyString
+  entity: 
+  proposal: MyString
+
+two:
+  title: MyString
+  permalink: MyString
+  user: 
+  body: MyString
+  entity: 
+  proposal: MyString
