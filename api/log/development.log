@@ -145,3 +145,902 @@ Migrating to CreateComplaints (20120922055343)
   [1m[35m (144.6ms)[0m  CREATE INDEX `index_complaints_on_entity_id` ON `complaints` (`entity_id`)
   [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120922055343')[0m
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/category_entities/1" for 192.168.2.124 at 2012-09-21 23:58:48 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-21 23:59:21 -0600
+Processing by CategoryEntitiesController#index as */*
+  [1m[35mCategoryEntity Load (0.4ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-21 23:59:50 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1" for 192.168.2.124 at 2012-09-22 00:00:03 -0600
+Processing by CategoryEntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1" for 192.168.2.124 at 2012-09-22 00:10:11 -0600
+Processing by CategoryEntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1.json" for 127.0.0.1 at 2012-09-22 00:22:33 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17206658073598518968_1348291592559&_=1348291592870" for 192.168.2.124 at 2012-09-22 00:26:17 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17206658073598518968_1348291592559", "_"=>"1348291592870", "id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery172021261621336452663_1348291629760&_=1348291630068" for 192.168.2.124 at 2012-09-22 00:26:49 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery172021261621336452663_1348291629760", "_"=>"1348291630068", "id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery172021658635465428233_1348291680914&_=1348291681175" for 192.168.2.124 at 2012-09-22 00:27:45 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery172021658635465428233_1348291680914", "_"=>"1348291681175", "id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery172018619522568769753_1348291752124&_=1348291752328" for 192.168.2.124 at 2012-09-22 00:28:56 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery172018619522568769753_1348291752124", "_"=>"1348291752328", "id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17209269550405442715_1348292130542&_=1348292130746" for 192.168.2.124 at 2012-09-22 00:35:15 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17209269550405442715_1348292130542", "_"=>"1348292130746", "id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17202841969053260982_1348292366606&_=1348292366812" for 192.168.2.124 at 2012-09-22 00:39:11 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17202841969053260982_1348292366606", "_"=>"1348292366812", "id"=>"1"}
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17202406589132733643_1348293104519&_=1348293104737" for 192.168.2.124 at 2012-09-22 00:51:29 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17202406589132733643_1348293104519", "_"=>"1348293104737", "id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17208147658626548946_1348293218787&_=1348293218976" for 192.168.2.124 at 2012-09-22 00:53:23 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17208147658626548946_1348293218787", "_"=>"1348293218976", "id"=>"1"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17200019365646876394749_1348293346982&_=1348293347184" for 192.168.2.124 at 2012-09-22 00:55:31 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17200019365646876394749_1348293346982", "_"=>"1348293347184", "id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1?callback=jQuery17204503579356241971_1348293378645&_=1348293378852" for 192.168.2.124 at 2012-09-22 00:55:58 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"callback"=>"jQuery17204503579356241971_1348293378645", "_"=>"1348293378852", "id"=>"1"}
+  [1m[35mCategoryEntity Load (0.3ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rails.png" for 192.168.2.124 at 2012-09-22 00:58:37 -0600
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/category_entity/1" for 192.168.2.117 at 2012-09-22 00:59:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity/1"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/category_entities/1" for 192.168.2.117 at 2012-09-22 00:59:49 -0600
+Processing by CategoryEntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/1" for 192.168.2.117 at 2012-09-22 01:22:22 -0600
+Processing by CategoryEntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoryEntity Load (0.5ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-22 01:29:34 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoryEntity Load (0.6ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 01:30:49 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[35mCategoryEntity Load (0.5ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 01:32:06 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 01:32:11 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 01:32:34 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17105368686318397522_1348295601300&_=1348295601541" for 192.168.2.124 at 2012-09-22 01:33:00 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17105368686318397522_1348295601300", "_"=>"1348295601541"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery171038940285355784_1348295688201&_=1348295688333" for 192.168.2.124 at 2012-09-22 01:34:32 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery171038940285355784_1348295688201", "_"=>"1348295688333"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/category_entities/?callback=jQuery17107803173551801592_1348295813469&_=1348295813712" for 192.168.2.124 at 2012-09-22 01:36:37 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17107803173551801592_1348295813469", "_"=>"1348295813712"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17105422798017971218_1348295916000&_=1348295916257" for 192.168.2.124 at 2012-09-22 01:38:20 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17105422798017971218_1348295916000", "_"=>"1348295916257"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17109726049099117517_1348295989040&_=1348295989333" for 192.168.2.124 at 2012-09-22 01:39:33 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17109726049099117517_1348295989040", "_"=>"1348295989333"}
+  [1m[35mCategoryEntity Load (1.0ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/category_entities/?callback=jQuery17106513256854377687_1348296016921&_=1348296017309" for 192.168.2.124 at 2012-09-22 01:39:56 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17106513256854377687_1348296016921", "_"=>"1348296017309"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery171047892517992295325_1348296038430&_=1348296049303" for 192.168.2.124 at 2012-09-22 01:40:28 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery171047892517992295325_1348296038430", "_"=>"1348296049303"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17109860414310824126_1348296067717&_=1348296071159" for 192.168.2.124 at 2012-09-22 01:40:50 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17109860414310824126_1348296067717", "_"=>"1348296071159"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17104807151861023158_1348296212203&_=1348296212618" for 192.168.2.124 at 2012-09-22 01:43:17 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17104807151861023158_1348296212203", "_"=>"1348296212618"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?_=1348296247370" for 192.168.2.124 at 2012-09-22 01:43:46 -0600
+Processing by CategoryEntitiesController#index as HTML
+  Parameters: {"_"=>"1348296247370"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?callback=jQuery17108153020842000842_1348296272838&_=1348296273319" for 192.168.2.124 at 2012-09-22 01:44:22 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"callback"=>"jQuery17108153020842000842_1348296272838", "_"=>"1348296273319"}
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started OPTIONS "/category_entity" for 192.168.2.127 at 2012-09-22 02:03:21 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/category_entity" for 192.168.2.127 at 2012-09-22 02:03:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entity" for 192.168.2.127 at 2012-09-22 02:03:46 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/category_entity" for 192.168.2.127 at 2012-09-22 02:04:10 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/category_entity.json" for 192.168.2.127 at 2012-09-22 02:04:15 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity.json"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/category_entity" for 192.168.2.127 at 2012-09-22 02:04:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 02:04:53 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entity" for 192.168.2.127 at 2012-09-22 02:04:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entities" for 192.168.2.127 at 2012-09-22 02:05:07 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 02:05:23 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started OPTIONS "/category_entity" for 192.168.2.127 at 2012-09-22 02:05:24 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entity"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:06:02 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entities" for 192.168.2.127 at 2012-09-22 02:06:10 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/category_entities/&callback=jQuery17106596013724338263_1348297659118?_=1348297661314" for 192.168.2.124 at 2012-09-22 02:07:25 -0600
+Processing by CategoryEntitiesController#show as */*
+  Parameters: {"_"=>"1348297661314", "id"=>"&callback=jQuery17106596013724338263_1348297659118"}
+  [1m[36mCategoryEntity Load (0.5ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 0 LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find CategoryEntity with id=&callback=jQuery17106596013724338263_1348297659118):
+  app/controllers/category_entities_controller.rb:13:in `show'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/category_entities/&callback=" for 192.168.2.124 at 2012-09-22 02:08:02 -0600
+Processing by CategoryEntitiesController#show as HTML
+  Parameters: {"id"=>"&callback="}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` WHERE `category_entities`.`id` = 0 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find CategoryEntity with id=&callback=):
+  app/controllers/category_entities_controller.rb:13:in `show'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/category_entities/?Callback=DocumentReadStatus" for 192.168.2.124 at 2012-09-22 02:09:22 -0600
+Processing by CategoryEntitiesController#index as HTML
+  Parameters: {"Callback"=>"DocumentReadStatus"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17108346910648979247_1348297887049&_=1348297887978" for 192.168.2.124 at 2012-09-22 02:11:11 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17108346910648979247_1348297887049", "_"=>"1348297887978"}
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17104821038234513253_1348297933262&_=1348297934430" for 192.168.2.124 at 2012-09-22 02:11:57 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17104821038234513253_1348297933262", "_"=>"1348297934430"}
+  [1m[36mCategoryEntity Load (0.2ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17104821038234513253_1348297933263&_=1348297953933" for 192.168.2.124 at 2012-09-22 02:12:13 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17104821038234513253_1348297933263", "_"=>"1348297953933"}
+  [1m[35mCategoryEntity Load (0.2ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery171049523633695207536_1348297994463&_=1348297997478" for 192.168.2.124 at 2012-09-22 02:13:02 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery171049523633695207536_1348297994463", "_"=>"1348297997478"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 1.3ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:13:20 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/category_entities" for 192.168.2.127 at 2012-09-22 02:13:41 -0600
+Processing by CategoryEntitiesController#index as HTML
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17109340585898607969_1348298029952&_=1348298038068" for 192.168.2.124 at 2012-09-22 02:13:42 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17109340585898607969_1348298029952", "_"=>"1348298038068"}
+  [1m[36mCategoryEntity Load (0.1ms)[0m  [1mSELECT `category_entities`.* FROM `category_entities` [0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:14:46 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery171014839870436117053_1348298120966&_=1348298127108" for 192.168.2.124 at 2012-09-22 02:15:06 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery171014839870436117053_1348298120966", "_"=>"1348298127108"}
+  [1m[35mCategoryEntity Load (0.1ms)[0m  SELECT `category_entities`.* FROM `category_entities` 
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 02:16:41 -0600
+Processing by CategoryEntitiesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery171076815728796646_1348298245408&_=1348298251170" for 192.168.2.124 at 2012-09-22 02:17:15 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery171076815728796646_1348298245408", "_"=>"1348298251170"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17103935244290623814_1348298287668&_=1348298289101" for 192.168.2.124 at 2012-09-22 02:17:51 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17103935244290623814_1348298287668", "_"=>"1348298289101"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17106220578032080084_1348298347794&_=1348298353668" for 192.168.2.124 at 2012-09-22 02:18:58 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17106220578032080084_1348298347794", "_"=>"1348298353668"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:19:23 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/category_entities?jsoncallback=jQuery171013349199411459267_1348298391992&_=1348298405986" for 192.168.2.124 at 2012-09-22 02:19:50 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery171013349199411459267_1348298391992", "_"=>"1348298405986"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (34.7ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.0ms)
+
+
+Started GET "/category_entities/?screen_name=l&callback=jQuery17108088207270484418_1348298512925&_=1348298526769" for 192.168.2.124 at 2012-09-22 02:21:51 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"screen_name"=>"l", "callback"=>"jQuery17108088207270484418_1348298512925", "_"=>"1348298526769"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:21:56 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entities/?jsoncallback=jQuery17105576587242539972_1348298558329&_=1348298560169" for 192.168.2.124 at 2012-09-22 02:22:24 -0600
+Processing by CategoryEntitiesController#index as */*
+  Parameters: {"jsoncallback"=>"jQuery17105576587242539972_1348298558329", "_"=>"1348298560169"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started OPTIONS "/category_entities" for 192.168.2.127 at 2012-09-22 02:22:25 -0600
+
+ActionController::RoutingError (No route matches [OPTIONS] "/category_entities"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/lesterzone/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 02:22:57 -0600
+Processing by CategoryEntitiesController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/category_entities/" for 192.168.2.124 at 2012-09-22 02:24:11 -0600
+Processing by CategoryEntitiesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:5:in `index'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/category_entities/1.json" for 192.168.2.124 at 2012-09-22 02:24:21 -0600
+Processing by CategoryEntitiesController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/lesterzone/railsprojects/kejese/quesejeaqui/api/app/models/category_entity.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+		:presence => true
+		            ^):
+  app/controllers/category_entities_controller.rb:13:in `show'
+
+
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/lesterzone/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
